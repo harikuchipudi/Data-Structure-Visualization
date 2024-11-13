@@ -1,0 +1,49 @@
+.stack-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .push-btn, .pop-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .push-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .push-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .pop-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .pop-btn:hover {
+    background-color: #e53935;
+  }
+  
+  .stack {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .stack-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

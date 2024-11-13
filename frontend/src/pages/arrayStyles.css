@@ -1,0 +1,36 @@
+.array-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .add-element-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .add-element-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .array {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .array-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
