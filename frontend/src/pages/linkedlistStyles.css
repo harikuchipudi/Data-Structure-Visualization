@@ -38,4 +38,9 @@
     font-size: 24px;
     margin-left: 5px;
   }
+
+  .operations{
+    display: inline-flex;
+    gap: 10px;
+  }
   
