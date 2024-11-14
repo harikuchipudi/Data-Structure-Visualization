@@ -8,10 +8,15 @@ function ArrayVisualization() {
     setArray([...array, Math.floor(Math.random() * 100)]);
   };
 
+  const deleteElement = () => {
+    setArray(array.slice(0,-1));
+  }
+
   return (
     <div className="array-container">
       <h2>Array Visualization</h2>
       <button className="add-element-btn" onClick={addElement}>Add Element</button>
+      <button className='add-element-btn' onClick={deleteElement}>Delete Element</button>
       <div className="array">
         {array.map((el, index) => (
           <div key={index} className="array-item">{el}</div>
