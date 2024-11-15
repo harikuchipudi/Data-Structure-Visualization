@@ -1,61 +1,99 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .graph-container {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+h2, h3 {
   text-align: center;
-  margin: 20px;
+  margin: 10px 0;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.add-node-btn, .add-edge-btn, .run-dijkstra-btn {
-  margin: 10px;
-  padding: 8px 15px;
-  font-size: 16px;
+/* Buttons */
+button {
+  background: #ffcc00;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
+button:hover {
+  background: #ffaa00;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Input */
+input {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 100px;
+  text-align: center;
+}
+
+/* Graph Nodes and Edges */
 .graph {
   margin-top: 20px;
 }
 
 .graph-nodes, .graph-edges {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
-.graph-node {
-  background-color: #c5e3bf;
-  border: 1px solid #333;
-  padding: 15px;
-  font-size: 18px;
+.graph-node, .graph-edge {
+  background: #444;
+  padding: 10px 15px;
   border-radius: 5px;
-}
-
-.graph-edge {
-  margin: 5px;
-  font-size: 16px;
-}
-
-.dijkstra-input {
-  margin-top: 20px;
-}
-
-.dijkstra-input input {
-  margin-left: 10px;
-  padding: 5px;
   font-size: 14px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
+.graph-node:hover, .graph-edge:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+/* Shortest Paths */
 .shortest-paths {
   margin-top: 20px;
-}
-
-.shortest-paths ul {
-  list-style: none;
-  padding: 0;
-}
-
-.shortest-paths li {
-  font-size: 16px;
-  margin: 5px 0;
+  text-align: center;
 }
 
 .shortest-paths ul {
@@ -63,10 +101,67 @@
   padding: 0;
   margin: 0 auto;
   max-width: 400px;
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .shortest-paths li {
   font-size: 16px;
-  margin: 5px 0;
-  text-align: left;
+  margin: 10px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: 1px solid #555;
+}
+
+.shortest-paths li:last-child {
+  border-bottom: none;
+}
+
+/* Dijkstra Input Section */
+.dijkstra-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Add Node and Edge Section */
+.add-node-btn, .add-edge-btn {
+  width: 130px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .graph-container {
+    padding: 15px;
+  }
+
+  .graph-nodes, .graph-edges {
+    gap: 5px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  input {
+    width: 80px;
+  }
+
+  .shortest-paths ul {
+    max-width: 300px;
+    padding: 10px;
+  }
 }
