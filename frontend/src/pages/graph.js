@@ -7,7 +7,7 @@ function GraphVisualization() {
     { source: 1, target: 2, weight: 1 },
     { source: 1, target: 3, weight: 4 },
     { source: 2, target: 3, weight: 2 },
-    { source: 3, target: 4, weight: 3 }
+    { source: 3, target: 4, weight: 3 },
   ]);
   const [shortestPaths, setShortestPaths] = useState({});
   const [sourceNode, setSourceNode] = useState('');
@@ -27,11 +27,13 @@ function GraphVisualization() {
 
   const dijkstra = (startNode) => {
     const distances = {};
+    const previousNodes = {};
     const visited = new Set();
 
-    // Initialize distances
+    // Initialize distances and previous nodes
     nodes.forEach(node => {
       distances[node] = Infinity;
+      previousNodes[node] = null;
     });
     distances[startNode] = 0;
 
@@ -60,6 +62,7 @@ function GraphVisualization() {
           const newDistance = distances[currentNode] + edge.weight;
           if (newDistance < distances[neighborNode]) {
             distances[neighborNode] = newDistance;
+            previousNodes[neighborNode] = currentNode;
           }
         }
       });
@@ -67,7 +70,22 @@ function GraphVisualization() {
       currentNode = getNextNode();
     }
 
-    setShortestPaths(distances);
+    const paths = {};
+    nodes.forEach(node => {
+      if (distances[node] !== Infinity) {
+        const path = [];
+        let current = node;
+        while (current !== null) {
+          path.unshift(current);
+          current = previousNodes[current];
+        }
+        paths[node] = { distance: distances[node], path };
+      } else {
+        paths[node] = { distance: Infinity, path: [] };
+      }
+    });
+
+    setShortestPaths(paths);
   };
 
   const handleDijkstra = () => {
@@ -121,9 +139,9 @@ function GraphVisualization() {
         <div className="shortest-paths">
           <h3>Shortest Paths from Node {sourceNode}</h3>
           <ul>
-            {Object.entries(shortestPaths).map(([node, distance]) => (
+            {Object.entries(shortestPaths).map(([node, data]) => (
               <li key={node}>
-                Node {node}: {distance === Infinity ? '∞' : distance}
+                Node {node}: Distance = {data.distance === Infinity ? '∞' : data.distance}, Path = {data.path.join(' → ')}
               </li>
             ))}
           </ul>
