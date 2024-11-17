@@ -4,6 +4,7 @@ import LinkedListVisualization from './pages/linkedlist';
 import StackVisualization from './pages/stack';
 import QueueVisualization from './pages/queue';
 import GraphVisualization from './pages/graph';
+import KnapSack01 from './problems/knapsack01';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -30,6 +31,9 @@ function App() {
               <li>
                 <Link to="/graph" className="nav-link">Graph Visualization</Link>
               </li>
+              <li>
+                <Link to="/knapsack" className='nav-link'>Knapsack Visualization</Link>
+              </li>
             </ul>
           </nav>
 
@@ -39,6 +43,7 @@ function App() {
             <Route path="/linked-list" element={<LinkedListVisualization />} />
             <Route path="/queue" element={<QueueVisualization/>}/>
             <Route path="/graph" element={<GraphVisualization/>}/>
+            <Route path="/knapsack" element={<KnapSack01/>}/>
 
             <Route path="/" element={<div className="home-container">
               <h2>Welcome to the Data Structures Visualizer!</h2>

@@ -1,0 +1,57 @@
+.knapsack-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .input-section {
+    margin: 20px;
+  }
+  
+  .input-section label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input-section input {
+    padding: 5px;
+    margin-left: 10px;
+    width: 300px;
+  }
+  
+  .input-section button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dp-grid {
+    margin: 20px;
+    color: black;
+  }
+  
+  .dp-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .dp-cell {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 2px;
+    text-align: center;
+    background-color: #e0f7fa;
+    border: 1px solid #00796b;
+  }
+  
+  .result-section {
+    margin: 20px;
+    font-size: 20px;
+    color: #00796b;
+  }
+  
