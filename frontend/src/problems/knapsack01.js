@@ -16,7 +16,7 @@ function KnapSack01() {
 
         for(let i=0; i<n; i++){
             for(let j=capacity; j>= weights[i]; j--){
-                dp[j] = Math.max(dp[j], values[j] + dp[j-weights[i]]);
+                dp[j] = Math.max(dp[j], values[i] + dp[j-weights[i]]);
             }
             grid.push(dp.slice());
         }
