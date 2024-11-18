@@ -5,6 +5,7 @@ import StackVisualization from './pages/stack';
 import QueueVisualization from './pages/queue';
 import GraphVisualization from './pages/graph';
 import KnapSack01 from './problems/knapsack01';
+import TrappingWaterVisualization from './problems/rainWater';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -34,6 +35,9 @@ function App() {
               <li>
                 <Link to="/knapsack" className='nav-link'>Knapsack Visualization</Link>
               </li>
+              <li>
+                <Link to="/Rain-water" className='nav-link'>Trapping Rain Water</Link>
+              </li>
             </ul>
           </nav>
 
@@ -44,6 +48,7 @@ function App() {
             <Route path="/queue" element={<QueueVisualization/>}/>
             <Route path="/graph" element={<GraphVisualization/>}/>
             <Route path="/knapsack" element={<KnapSack01/>}/>
+            <Route path="/Rain-water" element={<TrappingWaterVisualization/>}/>
 
             <Route path="/" element={<div className="home-container">
               <h2>Welcome to the Data Structures Visualizer!</h2>
