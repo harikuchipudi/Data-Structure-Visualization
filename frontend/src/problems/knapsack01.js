@@ -56,7 +56,7 @@ function KnapSack01() {
             </div>
 
             <div className="dp-grid">
-                <h3>DP Array Progress</h3>
+                <h3>Dynamic programming Array Progress</h3>
                 {dpGrid.map((row, index) => (
                     <div key={index} className="dp-row">
                         {row.map((cell, idx) => (
