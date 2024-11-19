@@ -1,6 +1,7 @@
 .array-container {
     text-align: center;
     margin-top: 30px;
+    min-height: 100vh;
   }
   
   .add-element-btn {

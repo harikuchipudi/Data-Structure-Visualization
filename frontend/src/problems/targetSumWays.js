@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./PerfectSum.css";
+import "./targetSumStyles.css";
 
 const TargetSumVisualization = () => {
   const [array, setArray] = useState([]);

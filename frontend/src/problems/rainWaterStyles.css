@@ -2,7 +2,9 @@
     text-align: center;
     margin: 20px auto;
     max-width: 900px;
+    min-height: 100vh;
   }
+
   
   .bar-chart {
     display: flex;

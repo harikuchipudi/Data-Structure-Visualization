@@ -1,6 +1,7 @@
 .queue-container {
     text-align: center;
     margin: 20px;
+    min-height: 100vh;
   }
   
   .enqueue-btn, .dequeue-btn {
