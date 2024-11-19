@@ -1,4 +1,6 @@
 import './App.css';
+import LandingPage from './components/landingPage';
+import Header from './components/header';
 import ArrayVisualization from './pages/array';
 import LinkedListVisualization from './pages/linkedlist';
 import StackVisualization from './pages/stack';
@@ -13,38 +15,10 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div className='app-container'>
+     
       <Router>
-        <div className='header-main' style={{ textAlign: 'center' }}>
-          <h1 className='header'>Data Structures Visualizer</h1>
-          <nav className="navigation">
-            <ul style={{ listStyleType: 'none', padding: '0' }}>
-              <li>
-                <Link to="/array" className="nav-link">Array Visualization</Link>
-              </li>
-              <li>
-                <Link to="/stack" className="nav-link">Stack Visualization</Link>
-              </li>
-              <li>
-                <Link to="/linked-list" className="nav-link">Linked List Visualization</Link>
-              </li>
-              <li>
-                <Link to="/queue" className="nav-link">Queue Visualization</Link>
-              </li>
-              <li>
-                <Link to="/graph" className="nav-link">Graph Visualization</Link>
-              </li>
-              <li>
-                <Link to="/knapsack" className='nav-link'>Knapsack Visualization</Link>
-              </li>
-              <li>
-                <Link to="/Rain-water" className='nav-link'>Trapping Rain Water</Link>
-              </li>
-              <li>
-                <Link to="/Target-sum" className='nav-link'>Target Sum Visualization</Link>
-              </li>
-            </ul>
-          </nav>
-
+        <Header/>
+        <div className="main-content">
           <Routes>
             <Route path="/array" element={<ArrayVisualization />} />
             <Route path="/stack" element={<StackVisualization />} />
@@ -54,11 +28,7 @@ function App() {
             <Route path="/knapsack" element={<KnapSack01/>}/>
             <Route path="/Rain-water" element={<TrappingWaterVisualization/>}/>
             <Route path="/Target-sum" element={<TargetSumVisualization/>}/>
-
-            <Route path="/" element={<div className="home-container">
-              <h2>Welcome to the Data Structures Visualizer!</h2>
-              <p>Select a data structure from the menu to visualize and interact with it.</p>
-            </div>} />
+            <Route path="/" element={<LandingPage/>} />
           </Routes>
         </div>
       </Router>

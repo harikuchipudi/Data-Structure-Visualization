@@ -1,69 +1,12 @@
-/* General Reset */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-}
-
-/* App Container */
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Header Styling */
-.header-main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #282c34;
-  color: white;
-  z-index: 1000;
-  padding: 10px 0;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.header {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-/* Navigation Styling */
-.navigation {
-  margin: 10px 0;
-}
-
-.navigation ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.nav-link:hover {
-  color: #61dafb;
-}
-
-/* Main Content Styling */
-.home-container, .page-container {
-  margin-top: 120px; /* Prevent content from being hidden under the fixed header */
+.main-content {
+  margin-top: 120px; /* Adjust for fixed header */
   padding: 20px;
+}
+
+.home-container, .page-container {
   text-align: center;
 }
 
-/* Default styles for pages */
 h2 {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -72,20 +15,4 @@ h2 {
 p {
   font-size: 1.2rem;
   color: #555;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  .header {
-    font-size: 1.5rem;
-  }
-
-  .navigation ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-link {
-    font-size: 0.9rem;
-  }
 }
