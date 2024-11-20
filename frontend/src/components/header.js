@@ -16,6 +16,7 @@ function Header() {
           <li><Link to="/knapsack" className="nav-link">Knapsack Visualization</Link></li>
           <li><Link to="/Rain-water" className="nav-link">Trapping Rain Water</Link></li>
           <li><Link to="/Target-sum" className="nav-link">Target Sum Visualization</Link></li>
+          <li><Link to="/max-product" className='nav-link'>Max Product subarray</Link></li>
         </ul>
       </nav>
     </header>

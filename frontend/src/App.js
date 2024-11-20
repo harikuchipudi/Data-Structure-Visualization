@@ -9,6 +9,7 @@ import GraphVisualization from './pages/graph';
 import KnapSack01 from './problems/knapsack01';
 import TrappingWaterVisualization from './problems/rainWater';
 import TargetSumVisualization from './problems/targetSumWays';
+import MaxProductSubarray from './problems/maximumProductSubArray';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/knapsack" element={<KnapSack01/>}/>
             <Route path="/Rain-water" element={<TrappingWaterVisualization/>}/>
             <Route path="/Target-sum" element={<TargetSumVisualization/>}/>
+            <Route path="max-product" element={<MaxProductSubarray/>}/>
             <Route path="/" element={<LandingPage/>} />
           </Routes>
         </div>
