@@ -11,6 +11,7 @@ import TrappingWaterVisualization from './problems/rainWater';
 import TargetSumVisualization from './problems/targetSumWays';
 import MaxProductSubarray from './problems/maximumProductSubArray';
 import LongestSubsequence from './problems/LongestIncreasingSubsequence';
+import DataStructures from './components/dataStructures';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ function App() {
         <Header/>
         <div className="main-content">
           <Routes>
+            <Route path="/Data Structures" element={<DataStructures/>} />
             <Route path="/array" element={<ArrayVisualization />} />
             <Route path="/stack" element={<StackVisualization />} />
             <Route path="/linked-list" element={<LinkedListVisualization />} />
