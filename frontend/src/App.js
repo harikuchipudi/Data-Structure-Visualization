@@ -10,6 +10,7 @@ import KnapSack01 from './problems/knapsack01';
 import TrappingWaterVisualization from './problems/rainWater';
 import TargetSumVisualization from './problems/targetSumWays';
 import MaxProductSubarray from './problems/maximumProductSubArray';
+import LongestSubsequence from './problems/LongestIncreasingSubsequence';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +31,9 @@ function App() {
             <Route path="/Rain-water" element={<TrappingWaterVisualization/>}/>
             <Route path="/Target-sum" element={<TargetSumVisualization/>}/>
             <Route path="max-product" element={<MaxProductSubarray/>}/>
+            <Route path="/lis" element={<LongestSubsequence/>}/>
             <Route path="/" element={<LandingPage/>} />
+
           </Routes>
         </div>
       </Router>
