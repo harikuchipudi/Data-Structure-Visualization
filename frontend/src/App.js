@@ -12,6 +12,7 @@ import TargetSumVisualization from './problems/targetSumWays';
 import MaxProductSubarray from './problems/maximumProductSubArray';
 import LongestSubsequence from './problems/LongestIncreasingSubsequence';
 import DataStructures from './components/dataStructures';
+import NCrVisualization from './problems/ncr';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/Target-sum" element={<TargetSumVisualization/>}/>
             <Route path="max-product" element={<MaxProductSubarray/>}/>
             <Route path="/lis" element={<LongestSubsequence/>}/>
+            <Route path="/nCr" element={<NCrVisualization/>}/>
             <Route path="/" element={<LandingPage/>} />
 
           </Routes>

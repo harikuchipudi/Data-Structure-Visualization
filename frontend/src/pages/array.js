@@ -14,7 +14,7 @@ function ArrayVisualization() {
 
   return (
     <div className="array-container">
-      <h2>Array Visualization</h2>
+      <p className="title">Array</p>
       <button className="add-element-btn" onClick={addElement}>Add Element</button>
       <button className='add-element-btn' onClick={deleteElement}>Delete Element</button>
       <div className="array">

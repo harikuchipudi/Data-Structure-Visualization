@@ -14,6 +14,7 @@ function DataStructures(){
         { name: "Trapping Rain Water", path: "/Rain-water" },
         { name: "Target Sum Visualization", path: "/Target-sum" },
         { name: "Longest Increasing Subsequence", path: "/lis"},
+        { name: "nCr Problem", path: "/nCr"},
       ];
 
     return(
