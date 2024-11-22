@@ -1,0 +1,41 @@
+.lcs-visualizer {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .controls input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .controls button {
+    margin-right: 10px;
+    padding: 5px 10px;
+  }
+  
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .current-cell {
+    background-color: #f0f8ff;
+    font-weight: bold;
+  }
+  

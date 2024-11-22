@@ -13,6 +13,7 @@ import MaxProductSubarray from './problems/maximumProductSubArray';
 import LongestSubsequence from './problems/LongestIncreasingSubsequence';
 import DataStructures from './components/dataStructures';
 import NCrVisualization from './problems/ncr';
+import LCSVisualizer from './problems/longestCommonSubsequence';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -36,8 +37,9 @@ function App() {
             <Route path="max-product" element={<MaxProductSubarray/>}/>
             <Route path="/lis" element={<LongestSubsequence/>}/>
             <Route path="/nCr" element={<NCrVisualization/>}/>
+            <Route path="/LCS" element={<LCSVisualizer/>}/>
             <Route path="/" element={<LandingPage/>} />
-
+            
           </Routes>
         </div>
       </Router>

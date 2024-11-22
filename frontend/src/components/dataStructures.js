@@ -15,17 +15,34 @@ function DataStructures(){
         { name: "Target Sum Visualization", path: "/Target-sum" },
         { name: "Longest Increasing Subsequence", path: "/lis"},
         { name: "nCr Problem", path: "/nCr"},
+        { name: "Longest common Subsequence", path: "/LCS"},
       ];
 
     return(
         <div className="ds-page">
         <h2 className="ds-title">Welcome to Data Structures Visualizer</h2>
-        <div className="grid-container">
-            {dataStructures.map((ds, index) => (
-            <Link to={ds.path} key={index} className="grid-item">
-                {ds.name}
+        <div class="row">
+            <div class="col-sm-4">
+            <div class="card">
+            <Link to="/array" className="card-body">
+                <h4><b>Array Visualization</b></h4>
             </Link>
-            ))}
+            </div>
+            </div>
+            <div class="col-sm-4">
+            <div class="card">
+            <Link to="/array" className="card-body">
+                <h4><b>Array Visualization</b></h4>
+            </Link>
+            </div>
+            </div>
+            <div class="col-sm-4">
+            <div class="card">
+            <Link to="/array" className="card-body">
+                <h4><b>Array Visualization</b></h4>
+            </Link>
+            </div>
+            </div>
         </div>
         </div>
     )
