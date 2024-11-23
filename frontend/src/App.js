@@ -16,6 +16,7 @@ import NCrVisualization from './problems/ncr';
 import LCSVisualizer from './problems/longestCommonSubsequence';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import GCDVisualizer from './problems/gcd';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/lis" element={<LongestSubsequence/>}/>
             <Route path="/nCr" element={<NCrVisualization/>}/>
             <Route path="/LCS" element={<LCSVisualizer/>}/>
+            <Route path="/GCD" element={<GCDVisualizer/>} />
             <Route path="/" element={<LandingPage/>} />
             
           </Routes>
