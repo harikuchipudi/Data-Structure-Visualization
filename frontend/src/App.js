@@ -14,6 +14,7 @@ import LongestSubsequence from './problems/LongestIncreasingSubsequence';
 import DataStructures from './components/dataStructures';
 import NCrVisualization from './problems/ncr';
 import LCSVisualizer from './problems/longestCommonSubsequence';
+import InterleaveVisualizer from './problems/interleavingString';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import GCDVisualizer from './problems/gcd';
@@ -40,6 +41,7 @@ function App() {
             <Route path="/nCr" element={<NCrVisualization/>}/>
             <Route path="/LCS" element={<LCSVisualizer/>}/>
             <Route path="/GCD" element={<GCDVisualizer/>} />
+            <Route path="/interleaving" element={<InterleaveVisualizer/>}/>
             <Route path="/" element={<LandingPage/>} />
             
           </Routes>
