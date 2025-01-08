@@ -19,6 +19,7 @@ import RemoveDuplicateLettersVisualizer from './problems/uniqueChactersSorted';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import GCDVisualizer from './problems/gcd';
+import PartitionTree from './backtracking/stringPartition';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path="/GCD" element={<GCDVisualizer/>} />
             <Route path="/interleaving" element={<InterleaveVisualizer/>}/>
             <Route path="/Unique-characters-sorted" element={<RemoveDuplicateLettersVisualizer/>}/>
+            <Route path="/string-partitions" element={<PartitionTree/>} />
             <Route path="/" element={<LandingPage/>} />
             
           </Routes>
