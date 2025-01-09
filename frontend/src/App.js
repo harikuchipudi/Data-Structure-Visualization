@@ -16,6 +16,7 @@ import NCrVisualization from './problems/ncr';
 import LCSVisualizer from './problems/longestCommonSubsequence';
 import InterleaveVisualizer from './problems/interleavingString';
 import RemoveDuplicateLettersVisualizer from './problems/uniqueChactersSorted';
+import NQueensVisualizer from './backtracking/NQueens';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import GCDVisualizer from './problems/gcd';
@@ -46,6 +47,7 @@ function App() {
             <Route path="/interleaving" element={<InterleaveVisualizer/>}/>
             <Route path="/Unique-characters-sorted" element={<RemoveDuplicateLettersVisualizer/>}/>
             <Route path="/string-partitions" element={<PartitionTree/>} />
+            <Route path="/NQueens" element={<NQueensVisualizer/>}/>
             <Route path="/" element={<LandingPage/>} />
             
           </Routes>
