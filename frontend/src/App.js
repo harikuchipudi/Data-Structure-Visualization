@@ -22,6 +22,7 @@ import { Link } from 'react-router-dom';
 import GCDVisualizer from './problems/gcd';
 import PartitionTree from './backtracking/stringPartition';
 import MazeSolver from './backtracking/RatMaze';
+import WordBreakVisualizer from './backtracking/WordSearch';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             <Route path="/string-partitions" element={<PartitionTree/>} />
             <Route path="/NQueens" element={<NQueensVisualizer/>}/>
             <Route path="/MazeSolver" element={<MazeSolver/>} />
+            <Route path="/WordSearch" element={<WordBreakVisualizer/>} />
             <Route path="/" element={<LandingPage/>} />
             
           </Routes>
