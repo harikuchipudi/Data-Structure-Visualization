@@ -102,7 +102,7 @@ const WordBreakVisualizer = () => {
         <div style={{ marginTop: "20px" }}>
           <h2>Result:</h2>
           <p>
-            Can the string "{inputString}" be segmented?{" "}
+            Can the string "{inputString}" be segmented into possible Dictionary words?{" "}
             <strong>{result ? "Yes" : "No"}</strong>
           </p>
         </div>
